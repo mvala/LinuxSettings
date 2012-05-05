@@ -8,6 +8,7 @@ if [ "$1" = "clear" ];then
 fi
 
 MY_SYNCS="common kde flash pulse astyle google-chrome mc"
+MY_SYNCS="$MY_SYNCS git root gimp"
 
 for MY_SYNC in $MY_SYNCS;do
   if [ -d "$MY_SYNC" ];then
