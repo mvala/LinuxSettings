@@ -3,12 +3,13 @@
 echo "Doing init ..."
 MY_DO_CLEAR="1"
 MY_DO_APPLY="1"
-if [ "$1" = "clear" ];then
-  MY_DO_APPLY="0"
-fi
 
 MY_SYNCS="common kde flash pulse astyle google-chrome mc"
 MY_SYNCS="$MY_SYNCS git root gimp"
+
+if [ -n "$*" ];then
+  MY_SYNCS="$*"
+fi
 
 for MY_SYNC in $MY_SYNCS;do
   if [ -d "$MY_SYNC" ];then
