@@ -66,6 +66,20 @@ immutability=2
 plugin=tasks
 zvalue=0
 
+[Containments][1][Applets][5][Configuration]
+Share=false
+forceRows=false
+groupWhenFull=true
+groupingStrategy=2
+highlightWindows=false
+maxRows=2
+showOnlyCurrentActivity=true
+showOnlyCurrentDesktop=true
+showOnlyCurrentScreen=true
+showOnlyMinimized=false
+showTooltip=true
+sortingStrategy=2
+
 [Containments][1][Applets][5][Configuration][Launchers]
 browser=preferred://browser, , ,\s
 
