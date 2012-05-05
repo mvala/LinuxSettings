@@ -1,0 +1,11 @@
+[Behaviour]
+DelayedMarkTime=3
+LoopOnGotoUnread=
+[FavoriteCollectionView]
+FavoriteCollectionViewMode=HiddenMode
+[General]
+SystemTrayEnabled=true
+SystemTrayPolicy=ShowAlways
+empty-trash-on-exit=true
+[TipOfDay]
+RunOnStart=false

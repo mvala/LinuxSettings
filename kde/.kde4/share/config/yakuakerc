@@ -1,0 +1,8 @@
+[Dialogs]
+FirstRun=false
+ShowPopup=false
+
+[Window]
+DynamicTabTitles=true
+Height=90
+KeepAbove=false

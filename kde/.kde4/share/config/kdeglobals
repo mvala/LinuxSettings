@@ -1,0 +1,10 @@
+[General]
+BrowserApplication=google-chrome.desktop
+[KDE]
+ShowIconsInMenuItems=true
+ShowIconsOnPushButtons=true
+[Locale]
+Country=sk
+[Toolbar style]
+ToolButtonStyle=NoText
+ToolButtonStyleOtherToolbars=NoText
