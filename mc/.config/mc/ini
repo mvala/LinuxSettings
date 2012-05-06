@@ -1,5 +1,8 @@
 [Midnight-Commander]
 auto_save_setup=0
 drop_menus=1
+pause_after_run=1
 [Panels]
 show_dot_files=false
+permission_mode=true
+navigate_with_arrows=true
