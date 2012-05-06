@@ -1,0 +1,9 @@
+[Defaults]
+Profile=Default
+
+[PROFILE_Default]
+EmailAddress=Martin.Vala@cern.ch
+FullName=Martin Vala
+Organization=
+ReplyAddr=
+ServerType=

@@ -7,5 +7,10 @@ FavoriteCollectionViewMode=HiddenMode
 SystemTrayEnabled=true
 SystemTrayPolicy=ShowAlways
 empty-trash-on-exit=true
+[MessageListView::StorageModelSortOrder]
+GlobalSortOrderGroupSortDirection=Descending
+GlobalSortOrderGroupSorting=SortGroupsByDateTime
+GlobalSortOrderMessageSortDirection=Descending
+GlobalSortOrderMessageSorting=SortMessagesByDateTime
 [TipOfDay]
 RunOnStart=false
