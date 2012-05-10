@@ -6,7 +6,7 @@ MY_DO_APPLY="1"
 MY_SYNCS=""
 
 if [ "$1" = "all" ];then
-  MY_SYNCS="common kde flash pulse astyle google-chrome mc"
+  MY_SYNCS="common kde flash pulse astyle google-chrome mc bash"
   MY_SYNCS="$MY_SYNCS git root gimp"
 else 
   MY_SYNCS="$*"
