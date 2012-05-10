@@ -1,0 +1,3 @@
+ENTRY "/media" URL "/media"
+ENTRY "/sh://mon1.saske.sk/var/www/localhost/htdocs" URL "/sh://mon1.saske.sk/var/www/localhost/htdocs"
+ENTRY "/sh://lxplus.saske.sk/afs/saske.sk/user/m/mvala" URL "/sh://lxplus.saske.sk/afs/saske.sk/user/m/mvala"
