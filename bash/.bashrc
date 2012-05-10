@@ -18,7 +18,7 @@ fi
 # Put your fun stuff here.
 
 # added CDPATH
-export CDPATH=".:~/git"
+export CDPATH=".:~:~/git"
 
 # adds $HOME/bin to PATH
 export PATH="$PATH:$HOME/bin"
