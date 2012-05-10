@@ -470,7 +470,7 @@ regex/\.([rR][aA]?[mM])$
 
 include/video
 	Open=(vlc %f >/dev/null 2>&1 &)
-
+	View=%view{ascii} mediainfo %f 2>/dev/null
 ### Documents ###
 
 # Postscript
