@@ -1,4 +1,6 @@
 #!/bin/bash
 
-test -d ~/.config/mc/ || mkdir -p ~/.config/mc/
-cp -Rf .config/mc ~/.config/
+test -d $HOME/.config/mc/ || mkdir -p $HOME/.config/mc/
+cp -Rf .config/mc $HOME/.config/
+test -d $HOME/.config/mc/ || mkdir -p $HOME/.local/share/mc/
+cp -Rf .local/share/mc $HOME/.local/share/mc/
