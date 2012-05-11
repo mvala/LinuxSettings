@@ -1,3 +1,3 @@
 #!/bin/bash
-
-cp .bashrc ~/
+cp /etc/skel/.bashrc $HOME/.bashrc
+cat .bashrc >> $HOME/.bashrc
