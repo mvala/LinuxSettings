@@ -2,5 +2,5 @@
 
 test -d $HOME/.config/mc/ || mkdir -p $HOME/.config/mc/
 cp -Rf .config/mc $HOME/.config/
-test -d mkdir -p $HOME/.local/share/mc/ || mkdir -p $HOME/.local/share/mc/
+test -d $HOME/.local/share/mc/ || mkdir -p $HOME/.local/share/mc/
 cp -Rf .local/share/mc $HOME/.local/share/mc/
