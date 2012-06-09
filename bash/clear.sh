@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -Rf ~/.bashrc
+rm -Rf ~/.bash*

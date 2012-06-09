@@ -13,29 +13,40 @@ fi
 
 echo "Doing init ..."
 MY_DO_CLEAR="1"
-MY_DO_APPLY="1"
+MY_DO_APPLY="0"
 MY_SYNCS=""
 
 if [ "$1" = "all" ];then
-  MY_SYNCS="common kde flash pulse astyle google-chrome mc bash"
-  MY_SYNCS="$MY_SYNCS git root gimp"
+  MY_SYNCS="common mc bash gnome"
+  MY_SYNCS="$MY_SYNCS astyle git root"
 else 
   MY_SYNCS="$*"
 fi
 
+# clearing ...
 for MY_SYNC in $MY_SYNCS;do
   if [ -d "$MY_SYNC" ];then
-    echo "=== Sync '$MY_SYNC' ==="
     MY_PWD=`pwd`
     cd $MY_SYNC
     if [ $MY_DO_CLEAR = "1" -a -f clear.sh ];then
-      echo " Clearing .."
+      echo " Clearing $MY_SYNC ..."
       ./clear.sh
     fi
+    cd $MY_PWD
+  fi
+done
+
+# appling
+for MY_SYNC in $MY_SYNCS;do
+  if [ -d "$MY_SYNC" ];then
+    MY_PWD=`pwd`
+    cd $MY_SYNC
     if [ $MY_DO_APPLY = "1" -a -f apply.sh ];then
-      echo " Applying ..."
+      echo " Applying $MY_SYNC ..."
       ./apply.sh
     fi
     cd $MY_PWD
   fi
 done
+
+

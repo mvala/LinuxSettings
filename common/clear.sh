@@ -1,16 +1,22 @@
 #!/bin/bash
 
 # local
-rm -Rf ~/.local/ ~/.cache 
+rm -Rf ~/.local/ ~/.cache ~/.config
 
 # X stuff
-rm -Rf ~/.Xauthority ~/.xsession-errors*
+rm -Rf ~/.Xauthority ~/.xsession-errors* ~/.ICEauthority ~/.esd_auth
 
 # pulse
-rm -Rf ~/.pulse/
+rm -Rf ~/.pulse/ ~/.pulse-cookie
 
-# flash player
-rm -Rf ~/.adobe/Flash_Player ~/.macromedia/Flash_Player
+# adobe stuff
+rm -Rf ~/.adobe ~/.macromedia
 
-# google chrome
-rm -Rf ~/.config/google-chrome
+# firefox
+rm -Rf ~/.mozilla
+
+# fedora
+rm -Rf ~/.pki ~/.spice-vdagent
+
+# gnome 
+rm -Rf ~/.abrt ~/.dbus ~/.elinks ~/.fontconfig ~/.gstreamer* ~/.mission-control
