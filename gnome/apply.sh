@@ -19,7 +19,7 @@ gconftool-2 --type bool --set /apps/gnome-terminal/global/use_menu_accelerators 
 # visual bell
 dbus-launch gsettings set org.gnome.desktop.wm.preferences visual-bell true
 dbus-launch gsettings set org.gnome.desktop.wm.preferences visual-bell-type 'frame-flash'
-dbus-launch gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'evolution.desktop', 'fedora-empathy-accounts.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nautilus.desktop', 'gnome-documents.desktop', 'gnome-terminal.desktop']"
+dbus-launch gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'evolution.desktop', 'fedora-empathy.desktop', 'rhythmbox.desktop', 'shotwell.desktop', 'libreoffice-writer.desktop', 'nautilus.desktop', 'gnome-documents.desktop', 'gnome-terminal.desktop']"
 
 # add guake to autostart
 mkdir -p ~/.local/share/applications/
@@ -27,5 +27,5 @@ if [ -f /usr/share/applications/guake.desktop ];then
   cp /usr/share/applications/guake.desktop ~/.local/share/applications/
 fi
 
-# bug in gnome
+# to solve F10 bug in gnome
 cp -rf .config/ ~/
