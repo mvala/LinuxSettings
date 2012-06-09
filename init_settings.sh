@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [ -z "$1" ];then
+  echo "Modules : "
+  for m in $(ls -1 | grep -v init | grep -v README);do
+    echo "    $m"
+  done
+  exit 0
+fi
+
 echo "Doing init ..."
 MY_DO_CLEAR="1"
 MY_DO_APPLY="1"
