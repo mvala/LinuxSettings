@@ -1,3 +1,4 @@
 ENTRY "/media" URL "/media"
-ENTRY "/sh://mon1.saske.sk/var/www/localhost/htdocs" URL "/sh://mon1.saske.sk/var/www/localhost/htdocs"
-ENTRY "/sh://lxplus.saske.sk/afs/saske.sk/user/m/mvala" URL "/sh://lxplus.saske.sk/afs/saske.sk/user/m/mvala"
+ENTRY "/sh://mvala@mon1.saske.sk/var/www/localhost/htdocs" URL "/sh://mvala@mon1.saske.sk/var/www/localhost/htdocs"
+ENTRY "/sh://mvala@lxplus.saske.sk/afs/saske.sk/user/m/mvala" URL "/sh://mvala@lxplus.saske.sk/afs/saske.sk/user/m/mvala"
+ENTRY "/sh://mvala@alicepc100.jinr.ru/cern/users/ALICE/RSN" URL "/sh://mvala@alicepc100.jinr.ru/cern/users/ALICE/RSN"
