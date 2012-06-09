@@ -13,7 +13,7 @@ fi
 
 echo "Doing init ..."
 MY_DO_CLEAR="1"
-MY_DO_APPLY="0"
+MY_DO_APPLY="1"
 MY_SYNCS=""
 
 if [ "$1" = "all" ];then
