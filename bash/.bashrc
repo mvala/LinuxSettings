@@ -10,3 +10,9 @@ if [ -f $HOME/.git-prompt.sh ];then
 fi
 
 export EDITOR="nano -w"
+
+# Aliases
+alias df='df -h'
+alias du='du -h'
+alias la='ls -al'
+
