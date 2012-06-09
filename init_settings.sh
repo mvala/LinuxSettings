@@ -5,6 +5,9 @@ if [ -z "$1" ];then
   for m in $(ls -1 | grep -v init | grep -v README);do
     echo "    $m"
   done
+  echo ""
+  echo "mvala's default :"
+  echo "    ./init_settings.sh common bash mc git astyle root"
   exit 0
 fi
 

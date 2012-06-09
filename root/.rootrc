@@ -1,7 +1,1 @@
-Browser.Name: TRootBrowser
 XSec.GSI.DelegProxy     2
-af.proofmode:                            1
-af.userhost:                             mvala:PWG2@prf000-iep-grid.saske.sk
-af.dspath:                               /pool/PROOF-AAF/proof/dataset
-af.redirurl:                             root://skaf.saske.sk/$1
-af.aliendsrepo:                          /alice/cern.ch/user/m/mvala/aaf_datasets
