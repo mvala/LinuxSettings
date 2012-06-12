@@ -14,5 +14,5 @@ export EDITOR="nano -w"
 # Aliases
 alias df='df -h'
 alias du='du -h'
-alias la='ls -al'
+alias la='ls -alh'
 alias root='root -l'
