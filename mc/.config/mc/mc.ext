@@ -475,12 +475,12 @@ include/video
 
 # Postscript
 type/^PostScript
-	Open=(okular %f >/dev/null 2>&1 &)
+	Open=(evince %f >/dev/null 2>&1 &)
 	View=%view{ascii} ps2ascii %f
 
 # PDF
 type/^PDF
-	Open=(okular %f >/dev/null 2>&1 &)
+	Open=(evince %f >/dev/null 2>&1 &)
 	View=%view{ascii} pdftotext %f -
 
 # The following code very ugly and should not be taken as example.
