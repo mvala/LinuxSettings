@@ -8,14 +8,16 @@ dbus-launch gsettings set org.gnome.desktop.interface menus-have-icons true
 dbus-launch gsettings set org.gnome.shell.calendar show-weekdate true
 dbus-launch gsettings set org.gnome.shell.clock show-date true
 
+gsettings set org.gnome.shell.overrides dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 6
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Ctrl>F1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Ctrl>F2']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Ctrl>F3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Ctrl>F4']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-5 "['<Ctrl>F5']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-6 "['<Ctrl>F6']"
 
 gsettings set org.gnome.shell.overrides button-layout ':minimize,maximize,close'
-gsettings set org.gnome.shell.overrides dynamic-workspaces false
-gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
 
 # gnome tweaking
 gconftool-2 --type bool --set /apps/gnome-terminal/global/use_menu_accelerators false # disable F10
