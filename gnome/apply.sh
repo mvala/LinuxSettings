@@ -13,6 +13,10 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Ctrl>F2
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-3 "['<Ctrl>F3']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-4 "['<Ctrl>F4']"
 
+gsettings set org.gnome.shell.overrides button-layout ':minimize,maximize,close'
+gsettings set org.gnome.shell.overrides dynamic-workspaces false
+gsettings set org.gnome.desktop.wm.preferences num-workspaces 4
+
 # gnome tweaking
 gconftool-2 --type bool --set /apps/gnome-terminal/global/use_menu_accelerators false # disable F10
 
