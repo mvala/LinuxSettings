@@ -12,7 +12,7 @@ if [ -z "$1" ];then
 fi
 
 echo "Doing init ..."
-MY_DO_CLEAR="1"
+MY_DO_CLEAR="0"
 MY_DO_APPLY="1"
 MY_SYNCS=""
 
