@@ -25,7 +25,7 @@ gconftool-2 --type bool --set /apps/gnome-terminal/global/use_menu_accelerators 
 # visual bell
 dbus-launch gsettings set org.gnome.desktop.wm.preferences visual-bell true
 dbus-launch gsettings set org.gnome.desktop.wm.preferences visual-bell-type 'frame-flash'
-dbus-launch gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'evolution.desktop', 'fedora-empathy.desktop', 'skype.desktop', 'rhythmbox.desktop', 'shotwell.desktop']"
+dbus-launch gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop', 'evolution.desktop', 'fedora-empathy.desktop', 'skype.desktop']"
 
 # add guake to autostart
 test -d ~/.config/autostart || mkdir -p ~/.config/autostart
