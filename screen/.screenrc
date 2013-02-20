@@ -33,7 +33,7 @@ defutf8 on
 # ------------------------------------------------------------------------------
 
 #unbindall
-escape ^Jj
+#escape ^Jj
 
 # Remove some stupid / dangerous key bindings
 bind ^k
