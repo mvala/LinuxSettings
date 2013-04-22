@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -Rf ~/.emacs
+rm -Rf ~/.emacs.d

@@ -1,28 +1,44 @@
+;; mvala's emacs settings
+;; yum install emacs-auto-complete emacs-pymacs python-ropemacs emacs-git
+
 ;; remove startup page
 (setq inhibit-startup-message t)
 
 ;; save backups to /tmp/.emacs_saves
-(setq backup-directory-alist `(("." . "/tmp/.emacs_saves")))
+;;(setq backup-directory-alist `(("." . "/tmp/.emacs_saves")))
+(setq backup-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq auto-save-file-name-transforms
+      `((".*" ,temporary-file-directory t)))
+
+;; enable auto complete
+(require 'auto-complete-config)
+(ac-config-default)
+(global-auto-complete-mode t)
 
 ;; add snippets
-(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-0.8.0/")
-(require 'yasnippet)
-(yas/global-mode 1)
+;;(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-0.8.0/")
+;;(require 'yasnippet)
+;;(yas/global-mode 1)
 
-;; EDE
-(global-ede-mode 1)                      ; Enable the Project management system
-;;(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion
-;;(require 'semantic/ia)
-;;(require 'semantic/bovine/gcc)
-
-;;(semantic-add-system-include "~/git/zmqprf/base" 'c-mode)
-;;(semantic-add-system-include "~/git/zmqprf/src" 'c-mode)
-
-(defun my-c-mode-cedet-hook ()
- (local-set-key "." 'semantic-complete-self-insert)
- (local-set-key ">" 'semantic-complete-self-insert))
-(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-
-;; intend
+;; k&r style
 (setq c-default-style "k&r" c-basic-offset 4)
 (setq-default indent-tabs-mode nil)
+
+;; enable cedet
+(load-file "~/.emacs.d/mvala-cedet.el")
+;; enable cmake
+(load-file "~/.emacs.d/mvala-cmake.el")
+;; enable python
+(load-file "~/.emacs.d/mvala-python.el")
+
+
+;; mvala's project zmqprf
+(ede-cpp-root-project "zmqprf"
+                      :name "ZeroMQ PROOF"
+                      :file "~/git/zmqprf/CMakeLists.txt"
+                      :include-path '("/base"
+                                      "/src"
+                                      )
+                      )
+
