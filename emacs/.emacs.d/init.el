@@ -4,6 +4,9 @@
 ;; remove startup page
 (setq inhibit-startup-message t)
 
+;; show parent bracket
+(show-paren-mode 1)
+
 ;; save backups to /tmp/.emacs_saves
 ;;(setq backup-directory-alist `(("." . "/tmp/.emacs_saves")))
 (setq backup-directory-alist
