@@ -1,6 +1,8 @@
 ### AliRsnLite code formatting style (based on ROOT)
 ### tested on astyle 2.02
 
+
+--style=kr		 # k&r
 --indent=spaces=3        # indent using 2 spaces per indent
 
 --indent-switches        # indent switch blocks

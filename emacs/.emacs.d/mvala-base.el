@@ -16,5 +16,7 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;;(setq vc-handled-backends nil)
+
 ;; enable autocomplete
 (require 'auto-complete-config)
