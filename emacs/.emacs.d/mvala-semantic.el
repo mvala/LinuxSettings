@@ -20,7 +20,7 @@
                        (cons "->" '(ac-source-semantic)))
           ;;(setq ac-sources '(ac-source-semantic ac-source-yasnippet))
 	  (add-to-list 'ac-sources 'ac-source-semantic))
-	  ))
+	  )
 
 ;; (defun mvala-c-mode-hook ()
 ;;   (local-set-key "." 'semantic-complete-self-insert)
