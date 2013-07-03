@@ -31,11 +31,5 @@ dbus-launch gsettings set org.gnome.shell favorite-apps "['google-chrome.desktop
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action blank
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action blank
 
-# add guake to autostart
-test -d ~/.config/autostart || mkdir -p ~/.config/autostart
-if [ -f /usr/share/applications/guake.desktop ];then
-  cp /usr/share/applications/guake.desktop ~/.config/autostart
-fi
-
 # to solve F10 bug in gnome
 cp -rf .config/ ~/
