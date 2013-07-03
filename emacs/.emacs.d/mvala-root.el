@@ -1,3 +1,4 @@
+;; ROOT added to include path
 
 (setq root-include (let ((rootsys (getenv "ROOTSYS")))
                           (if rootsys
