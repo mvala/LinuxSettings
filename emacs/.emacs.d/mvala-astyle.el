@@ -2,6 +2,7 @@
 (if (file-exists-p (concat eide-proj-dir "etc/astyle.cf"))
     (setq astyle-opt (concat "astyle --options=" (concat eide-proj-dir "etc/astyle.cf")))
     )
+(message astyle-opt)
 (defun astyle-this-buffer ()
   (interactive)
   (save-buffer)

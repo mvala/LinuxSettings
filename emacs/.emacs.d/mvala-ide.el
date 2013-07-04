@@ -1,5 +1,5 @@
 ;; emacs-ide settings
-
+(defvar eide-proj-dir (file-name-directory default-directory))
 (when (display-graphic-p)
   (when (fboundp 'winner-mode)
     (winner-mode 1))
@@ -9,7 +9,7 @@
         (require 'eide)
         (eide-start)
         (load-file (concat (file-name-directory default-directory) "etc/emacs-ide-extra.el"))
-        (defvar eide-proj-dir (file-name-directory default-directory))
+        (setq eide-proj-dir (file-name-directory default-directory))
         (if window-system
             (set-frame-size (selected-frame) 170 45))
 
