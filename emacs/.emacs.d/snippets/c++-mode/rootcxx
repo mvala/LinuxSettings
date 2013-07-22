@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: rootcxx
+# contributor: mvala
+# key: rootcxx
+# --
+// -*-c++-*-
+
+#include "${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}.h"
+
+ClassImp($1);
+
+$1::$1() : ${2:TObject} {
+
+}
+
+$1::~$1() {
+
+}
+
+$0

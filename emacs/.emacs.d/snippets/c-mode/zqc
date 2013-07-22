@@ -22,6 +22,25 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`.h}"
+#include "${1:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}.h"
+
+struct _$1_t {
+};
+
+$1_t *$1_new()
+{
+    $1_t *self = ($1_t *) zmalloc(sizeof($1_t));
+    return self;
+}
+
+void $1_destroy($1_t **self_p)
+{
+    assert(self_p);
+    if (*self_p) {
+        $1_t *self = *self_p;
+        free(self);
+        *self_p = NULL;
+    }
+}
 
 $0

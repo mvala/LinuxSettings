@@ -25,9 +25,20 @@
 #ifndef ${1:_`(upcase (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`_H_}
 #define $1
 
+#include <czmq.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+    /* Opaque class structure */
+    typedef struct _${2:`(file-name-nondirectory (file-name-sans-extension (buffer-file-name)))`}_t $2_t;
+
+    /* create new instance of $2 */
+    $2_t *$2_new();
+
+    /* destroy broker */
+    void $2_destroy($2_t **self_p);
 
 $0
 
