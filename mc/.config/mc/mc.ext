@@ -1,4 +1,4 @@
-# Midnight Commander 3.0 extension file
+!# Midnight Commander 3.0 extension file
 # Warning: Structure of this file has changed completely with version 3.0
 #
 # All lines starting with # or empty lines are thrown away.
@@ -382,7 +382,7 @@ shell/.ico
 	Include=image
 
 include/image
-	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (eog %f  >/dev/null 2>&1 &); fi
+	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (gwenview %f  >/dev/null 2>&1 &); fi
 	View=%view{ascii} identify %f
 	#View=%view{ascii} asciiview %f
 
@@ -475,12 +475,12 @@ include/video
 
 # Postscript
 type/^PostScript
-	Open=(evince %f >/dev/null 2>&1 &)
+	Open=(okular %f >/dev/null 2>&1 &)
 	View=%view{ascii} ps2ascii %f
 
 # PDF
 type/^PDF
-	Open=(evince %f >/dev/null 2>&1 &)
+	Open=(okular %f >/dev/null 2>&1 &)
 	View=%view{ascii} pdftotext %f -
 
 # The following code very ugly and should not be taken as example.
