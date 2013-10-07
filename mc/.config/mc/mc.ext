@@ -382,7 +382,7 @@ shell/.ico
 	Include=image
 
 include/image
-	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (gwenview %f  >/dev/null 2>&1 &); fi
+	Open=if [ "$DISPLAY" = "" ]; then zgv %f; else (shotwell %f  >/dev/null 2>&1 &); fi
 	View=%view{ascii} identify %f
 	#View=%view{ascii} asciiview %f
 

@@ -1,3 +1,5 @@
 [user]
 	email = Martin.Vala@cern.ch
 	name = Martin Vala
+[push]
+	default = matching
