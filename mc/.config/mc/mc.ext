@@ -475,12 +475,12 @@ include/video
 
 # Postscript
 type/^PostScript
-	Open=(okular %f >/dev/null 2>&1 &)
+	Open=(evince %f >/dev/null 2>&1 &)
 	View=%view{ascii} ps2ascii %f
 
 # PDF
 type/^PDF
-	Open=(okular %f >/dev/null 2>&1 &)
+	Open=(evince %f >/dev/null 2>&1 &)
 	View=%view{ascii} pdftotext %f -
 
 # The following code very ugly and should not be taken as example.
@@ -534,7 +534,7 @@ type/^FrameMaker
 
 # DVI
 regex/\.([dD][vV][iI])$
-	Open=if [ x$DISPLAY = x ]; then dvisvga %f; else (okular %f >/dev/null 2>&1 &); fi
+	Open=if [ x$DISPLAY = x ]; then dvisvga %f; else (evince %f >/dev/null 2>&1 &); fi
 	View=%view{ascii} dvi2tty %f
 
 # TeX
