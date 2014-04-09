@@ -1,3 +1,0 @@
-#source $BYOBU_PREFIX/share/byobu/keybindings/common
-source $HOME/.byobu/f-keys.screen
-bindkey "^A"

@@ -1,5 +1,2 @@
-ENTRY "/media" URL "/media"
-ENTRY "mon1.saske.sk/var/www/localhost/htdocs" URL "/sh://mon1.saske.sk/var/www/localhost/htdocs"
-ENTRY "lxplus.saske.sk/afs/saske.sk/user/m/mvala" URL "/sh://lxplus.saske.sk/afs/saske.sk/user/m/mvala"
-ENTRY "alike@alicepc100.jinr.ru/cern/users/ALICE" URL "/sh://alike@alicepc100.jinr.ru/cern/users/ALICE"
+ENTRY "alike@alice.saske.sk/home/alike" URL "/sh://alike@alice.saske.sk/home/alike"
 ENTRY "mvala@alicepc104.jinr.ru/home/mvala" URL "/sh://mvala@alicepc104.jinr.ru/home/mvala"
