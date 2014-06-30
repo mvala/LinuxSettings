@@ -2,7 +2,7 @@
 auto_save_setup=0
 drop_menus=1
 pause_after_run=1
-use_internal_edit=0
+use_internal_edit=1
 [Panels]
 show_dot_files=false
 permission_mode=true

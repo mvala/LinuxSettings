@@ -1,2 +1,1 @@
-ENTRY "alike@alice.saske.sk/home/alike" URL "/sh://alike@alice.saske.sk/home/alike"
-ENTRY "mvala@alicepc104.jinr.ru/home/mvala" URL "/sh://mvala@alicepc104.jinr.ru/home/mvala"
+ENTRY "/sh://alike@fb-iep-grid.saske.sk/var/www/html/srpm" URL "/sh://alike@fb-iep-grid.saske.sk/var/www/html/srpm"
