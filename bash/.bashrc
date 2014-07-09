@@ -20,13 +20,6 @@ export CDPATH=".:~:~/git"
 export PATH="$PATH:$HOME/bin"
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
-source /usr/share/git-core/contrib/completion/git-prompt.sh
-export PS1="\[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \W\[\033[01;33m\]\$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] "
-
-export GIT_PS1_SHOWDIRTYSTATE=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
-
-
 # Alias
 alias df='df -h'
 alias du='du -h'
@@ -52,3 +45,28 @@ alias eos-umount="eos fuse umount /eos"
 alias blade01="ssh -f -L 8081:192.168.36.231:80 mvala@hydra.jinr.ru -N"
 
 eos-saske
+#export EOS_MGM_URL="root://eos-head2-iep-grid.saske.sk"
+
+# ALICE stuff
+if [ -f /usr/bin/aliroot-version ];then
+  /usr/bin/aliroot-version latest || module add $(ls -1t $HOME/.alice/ | head -n 1)
+fi
+# end ALICE stuff
+
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+export PS1="\[\033[01;37m\]\$? \$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\342\234\223\"; else echo \"\[\033[01;31m\]\342\234\227\"; fi) $(if [[ ${EUID} == 0 ]]; then echo '\[\033[01;31m\]\h'; else echo '\[\033[01;32m\]\u@\h'; fi)\[\033[01;34m\] \W\[\033[01;33m\]\$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] "
+
+export PROMPT_DIRTRIM=1
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+
+settitle() {
+    printf "\033k$1\033\\"
+}
+
+ssh() {
+    settitle "$*"
+    command ssh "$@"
+    settitle "bash"
+}
+

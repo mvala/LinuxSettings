@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rm -Rf ~/.nanorc
+rm -Rf ~/.nanorc ~/.nano
