@@ -1,3 +1,5 @@
 #!/bin/bash
 cp /etc/skel/.bash* ~/
-cat .bashrc >> ~/.bashrc
+cp -f .bashrc ~/
+[ -d ~/.config ] || mkdir -p ~/.config
+cp .config/.prompt.sh ~/.config/
