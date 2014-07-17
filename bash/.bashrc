@@ -11,7 +11,13 @@ fi
 # User specific aliases and functions
 
 # Sets default editor
-export EDITOR="nano -w"
+if [ -f /usr/bin/emacsclient ];then
+    export ALTERNATE_EDITOR=emacs
+    export EDITOR=emacsclient
+    export VISUAL=emacsclient
+else
+    export EDITOR="nano"
+fi
 
 # Added CDPATH
 export CDPATH=".:~:~/git"
