@@ -3,3 +3,9 @@
 	name = Martin Vala
 [push]
 	default = matching
+[color]
+    ui = true
+    branch = true
+    diff = true
+    interactive = true
+    status = true
