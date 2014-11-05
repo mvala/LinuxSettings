@@ -149,3 +149,7 @@ set smarttab
 
 " always uses spaces instead of tab characters
 set expandtab
+call pathogen#infect()
+set laststatus=2
+set number
+set rnu
