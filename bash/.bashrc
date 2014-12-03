@@ -11,7 +11,7 @@ fi
 # User specific aliases and functions
 
 # Sets default editor
-#export EDITOR="nano"
+export EDITOR="vim"
 
 # Added CDPATH
 export CDPATH=".:~:~/git"

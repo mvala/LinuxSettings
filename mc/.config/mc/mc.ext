@@ -653,6 +653,12 @@ regex/\.xz$
 	Open=xz -dc %f | %var{PAGER:more}
 	View=%view{ascii} xz -dc %f 2>/dev/null
 
+### Blender ###
+
+regex/\.blend$
+	Open=blender %f >/dev/null 2>&1 &
+
+
 ### Default ###
 
 # Default target for anything not described above
