@@ -28,7 +28,7 @@ alias l='ls'
 alias la='ls -alh'
 alias root='root -l'
 alias eos='LD_LIBRARY_PATH= eos'
-alias github-fork-sync="git fetch upstream && git merge upstream/$(git rev-parse --abbrev-ref HEAD) && git push"
+alias github-fork-sync='git fetch upstream && git merge upstream/$(git rev-parse --abbrev-ref HEAD) && git push'
 
 # Alias SIVVP
 alias mgmt1="ssh -f -L 8081:172.29.102.11:80 mvala@lx000.saske.sk -N"
