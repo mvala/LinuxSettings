@@ -28,7 +28,7 @@ alias l='ls'
 alias la='ls -alh'
 alias root='root -l'
 alias eos='LD_LIBRARY_PATH= eos'
-alias github-fork-sync="git fetch upstream && git merge upstream/master && git push"
+alias github-fork-sync="git fetch upstream && git merge upstream/$(git rev-parse --abbrev-ref HEAD) && git push"
 
 # Alias SIVVP
 alias mgmt1="ssh -f -L 8081:172.29.102.11:80 mvala@lx000.saske.sk -N"
@@ -44,13 +44,13 @@ alias eos-umount="eos fuse umount /eos"
 # Alias HYDRA
 alias blade01="ssh -f -L 8081:192.168.36.231:80 mvala@hydra.jinr.ru -N"
 
-eos-saske
+#eos-saske
 #export EOS_MGM_URL="root://eos-head2-iep-grid.saske.sk"
 
 # ALICE stuff
-if [ -f /usr/bin/aliroot-version ];then
-  /usr/bin/aliroot-version latest || module add $(ls -1t $HOME/.alice/ | head -n 1)
-fi
+#if [ -f /usr/bin/aliroot-version ];then
+#  /usr/bin/aliroot-version latest || module add $(ls -1t $HOME/.alice/ | head -n 1)
+#fi
 # end ALICE stuff
 
-source ~/.config/.prompt.sh
+#source ~/.config/.prompt.sh
