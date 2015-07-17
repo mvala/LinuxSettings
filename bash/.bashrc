@@ -17,7 +17,7 @@ export EDITOR="vim"
 export CDPATH=".:~:~/git"
 
 # Adds $HOME/bin to PATH
-export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/bin:$PATH"
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
 
 # Alias
@@ -53,4 +53,3 @@ alias blade01="ssh -f -L 8081:192.168.36.231:80 mvala@hydra.jinr.ru -N"
 #fi
 # end ALICE stuff
 
-#source ~/.config/.prompt.sh
