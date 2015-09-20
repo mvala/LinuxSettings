@@ -5,7 +5,7 @@ settitle() {
 }
 
 ssh() {
-    settitle "$*"
+#    settitle "$*"
     command ssh "$@"
     settitle "bash"
 }
