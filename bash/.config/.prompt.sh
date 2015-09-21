@@ -1,14 +1,14 @@
 #!/bin/bash
 
-settitle() {
-    printf "\033k$1\033\\"
-}
+#settitle() {
+#    printf "\033k$1\033\\"
+#}
 
-ssh() {
+#ssh() {
 #    settitle "$*"
-    command ssh "$@"
-    settitle "bash"
-}
+#    command ssh "$@"
+#    settitle "bash"
+#}
 
 
 if [ "$PS1" ];then
