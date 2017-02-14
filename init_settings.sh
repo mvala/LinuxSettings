@@ -17,8 +17,8 @@ MY_DO_APPLY="1"
 MY_SYNCS=""
 
 if [ "$1" = "all" ];then
-  MY_SYNCS="common mc bash gnome"
-  MY_SYNCS="$MY_SYNCS astyle git root"
+  MY_SYNCS="common mc bash vim"
+  MY_SYNCS="$MY_SYNCS git root"
 else 
   MY_SYNCS="$*"
 fi
@@ -48,5 +48,4 @@ for MY_SYNC in $MY_SYNCS;do
     cd $MY_PWD
   fi
 done
-
 

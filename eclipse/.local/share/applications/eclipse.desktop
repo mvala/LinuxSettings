@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Eclipse
-Comment= "Eclipse"
-Icon=/home/mvala/Software/eclipse/icon.xpm
-Exec=/home/mvala/Software/eclipse/eclipse.sh
-Terminal=false
-Categories=Development;IDE;Java;

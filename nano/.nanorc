@@ -1,9 +1,0 @@
-set const
-set matchbrackets "(<[{)>]}"
-set nowrap
-set speller "hunspell"
-set tabsize 4
-set tabstospaces
-
-include ~/.nano/syntax/ALL.nanorc
-
